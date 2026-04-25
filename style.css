@@ -76,7 +76,7 @@ ul, ol {
   width: 100%;
   max-width: 760px;
   margin: 0 auto;
-  padding: 0 16px;
+  padding: 0 8px;
 }
 
 /* ---------- Header ---------- */
@@ -196,8 +196,14 @@ ul, ol {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center;
+  object-position: right center;
   display: block;
+}
+
+@media (min-width: 768px) {
+  .fv__image-wrap img {
+    object-position: center;
+  }
 }
 
 .fv__overlay {
@@ -816,18 +822,18 @@ ul, ol {
 
 .page-hero__placeholder {
   width: 100%;
-  height: 260px;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .page-hero__placeholder--sports {
-  background: linear-gradient(160deg, #0f2940 0%, #1e4d7a 60%, #2a6b9e 100%);
+  background: transparent;
 }
 
 .page-hero__placeholder--shoulder {
-  background: linear-gradient(160deg, #3a5a30 0%, #5a8a4a 60%, #7aaa6a 100%);
+  background: transparent;
 }
 
 .page-hero__overlay {
@@ -876,7 +882,7 @@ ul, ol {
 
 /* ---------- Sympathy ---------- */
 .sympathy {
-  padding: 32px 16px;
+  padding: 32px 8px;
 }
 
 .sympathy__list {
@@ -1298,10 +1304,11 @@ ul, ol {
   background: var(--color-white);
   border: 2px solid var(--color-primary);
   border-radius: var(--radius-md);
-  padding: 14px 20px;
+  padding: 14px 16px;
   text-align: left;
-  max-width: 560px;
-  margin: 0 auto 8px;
+  margin: 0 0 8px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .appeal-block__lead {
@@ -1966,7 +1973,7 @@ ul, ol {
 }
 
 .section--tight {
-  padding: 8px 0;
+  padding: 8px 16px;
 }
 
 .section--gray {
