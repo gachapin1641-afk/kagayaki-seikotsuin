@@ -270,6 +270,48 @@ ul, ol {
   box-shadow: 0 4px 16px rgba(232,130,90,0.5);
 }
 
+/* ---------- First Intro (トップページ) ---------- */
+.first-intro {
+  padding: 28px 16px;
+  background: #EEF6FF;
+  border-bottom: 2px solid var(--color-secondary);
+}
+
+.first-intro__title {
+  font-size: 18px;
+  font-weight: 900;
+  color: var(--color-secondary);
+  margin-bottom: 14px;
+  text-align: center;
+}
+
+.first-intro__list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.first-intro__item {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--color-black);
+  line-height: 1.6;
+}
+
+@media (min-width: 768px) {
+  .first-intro { padding: 36px 40px; }
+  .first-intro__title { font-size: 24px; }
+  .first-intro__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    max-width: 800px;
+    margin: 0 auto 20px;
+  }
+  .first-intro__item { font-size: 18px; }
+}
+
 /* ---------- Nayami Section ---------- */
 .nayami {
   padding: 32px 16px;
@@ -607,6 +649,93 @@ ul, ol {
   line-height: 1.6;
 }
 
+.ryokin-section .price-table td:last-child {
+  font-size: 13px;
+  color: var(--color-gray-500);
+}
+
+@media (min-width: 768px) {
+  .ryokin-section .price-table td:last-child {
+    font-size: 16px;
+  }
+}
+
+/* ---------- Ryokin Page ---------- */
+.page-hero__placeholder--ryokin {
+  background: linear-gradient(160deg, #1a3a5c 0%, #2c6a9a 60%, #E8825A 100%);
+}
+
+.ryokin-section {
+  padding: 32px 16px;
+  background: var(--color-white);
+}
+
+.ryokin-section--gray {
+  background: var(--color-gray-100);
+}
+
+.ryokin-lead {
+  font-size: 15px;
+  color: var(--color-gray-700);
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+.payment-list {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+
+.payment-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--color-white);
+  border: 1px solid var(--color-gray-200);
+  border-radius: var(--radius-md);
+  padding: 12px 20px;
+}
+
+.payment-item__icon {
+  font-size: 24px;
+}
+
+.payment-item__text {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--color-black);
+}
+
+@media (min-width: 768px) {
+  .ryokin-section { padding: 48px 40px; }
+  .ryokin-lead { font-size: 18px; }
+  .payment-item__text { font-size: 20px; }
+  .payment-item { padding: 16px 32px; }
+}
+
+.price-section__lead {
+  font-size: 15px;
+  color: var(--color-gray-700);
+  text-align: center;
+  margin-bottom: 20px;
+  line-height: 1.7;
+}
+
+.price-link-wrap {
+  margin-top: 16px;
+  text-align: center;
+}
+
+.price-link-wrap .btn-sub {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  padding: 0 32px;
+}
+
 /* ---------- Voice ---------- */
 .voice-section {
   padding: 40px 16px;
@@ -665,13 +794,9 @@ ul, ol {
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 18px 0;
-  cursor: pointer;
-  background: none;
-  border: none;
+  padding: 18px 0 8px;
   width: 100%;
   text-align: left;
-  font-family: var(--font-base);
 }
 
 .faq-q-label {
@@ -696,26 +821,10 @@ ul, ol {
   line-height: 1.5;
 }
 
-.faq-icon {
-  font-size: 20px;
-  color: var(--color-gray-500);
-  transition: transform 0.3s;
-  flex-shrink: 0;
-  line-height: 1;
-}
-
-.faq-item.is-open .faq-icon {
-  transform: rotate(45deg);
-}
-
 .faq-answer {
-  display: none;
-  padding: 0 0 18px 36px;
-}
-
-.faq-item.is-open .faq-answer {
   display: flex;
   gap: 10px;
+  padding: 0 0 18px 0;
 }
 
 .faq-a-label {

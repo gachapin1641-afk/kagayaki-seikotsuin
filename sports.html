@@ -19,6 +19,20 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+
+  <!-- Google tag (gtag.js) - GA4 -->
+  <!-- 測定ID: 院長のGoogleアカウントで取得後 G-XXXXXXXXXX を差し替えてください -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+  <!-- Google Search Console 認証 -->
+  <!-- 認証コード取得後に content="" 内を差し替えてください -->
+  <meta name="google-site-verification" content="XXXXXXXXXX" />
 </head>
 <body>
 
@@ -46,6 +60,7 @@
       <li><a href="sports.html" class="drawer__item">スポーツ外傷・障害</a></li>
       <li><a href="shoulder.html" class="drawer__item">肩こり・腰痛</a></li>
       <li><a href="visit.html" class="drawer__item">無料送迎・訪問診療</a></li>
+      <li><a href="ryokin.html" class="drawer__item">料金一覧</a></li>
     </ul>
   </nav>
   <div class="drawer-overlay" id="drawerOverlay"></div>
@@ -218,7 +233,115 @@
     </div>
   </section>
 
-  <!-- CTA -->
+
+  <!-- よくある質問 -->
+  <section class="faq-section" id="faq">
+    <div class="container">
+      <h2 class="section-title">よくある質問</h2>
+      <ul class="faq-list">
+        <li class="faq-item">
+          <div class="faq-question">
+            <span class="faq-q-label">Q</span>
+            <span class="faq-question__text">予約は必要ですか？</span>
+          </div>
+          <div class="faq-answer">
+            <span class="faq-a-label">A</span>
+            <p class="faq-answer__text">予約なしでも当日受付OKです。お電話いただくとスムーズにご案内できます。</p>
+          </div>
+        </li>
+        <li class="faq-item">
+          <div class="faq-question">
+            <span class="faq-q-label">Q</span>
+            <span class="faq-question__text">保険は使えますか？</span>
+          </div>
+          <div class="faq-answer">
+            <span class="faq-a-label">A</span>
+            <p class="faq-answer__text">骨折・脱臼・打撲・捻挫・挫傷は健康保険の適用対象です。詳しくはお気軽にご相談ください。</p>
+          </div>
+        </li>
+        <li class="faq-item">
+          <div class="faq-question">
+            <span class="faq-q-label">Q</span>
+            <span class="faq-question__text">子連れでも大丈夫ですか？</span>
+          </div>
+          <div class="faq-answer">
+            <span class="faq-a-label">A</span>
+            <p class="faq-answer__text">はい、大丈夫です。キッズスペースを完備しておりますので、お子様連れでも安心してご来院いただけます。</p>
+          </div>
+        </li>
+        <li class="faq-item">
+          <div class="faq-question">
+            <span class="faq-q-label">Q</span>
+            <span class="faq-question__text">駐車場はありますか？</span>
+          </div>
+          <div class="faq-answer">
+            <span class="faq-a-label">A</span>
+            <p class="faq-answer__text">はい、3台分の駐車場をご用意しております。お車でのご来院も安心してお越しください。</p>
+          </div>
+        </li>
+        <li class="faq-item">
+          <div class="faq-question">
+            <span class="faq-q-label">Q</span>
+            <span class="faq-question__text">支払い方法を教えてください</span>
+          </div>
+          <div class="faq-answer">
+            <span class="faq-a-label">A</span>
+            <p class="faq-answer__text">現金のほか、PayPayでのお支払いが可能です。クレジットカードはご利用いただけませんのでご了承ください。</p>
+          </div>
+        </li>
+        <li class="faq-item">
+          <div class="faq-question">
+            <span class="faq-q-label">Q</span>
+            <span class="faq-question__text">初診の費用はどのくらいですか？</span>
+          </div>
+          <div class="faq-answer">
+            <span class="faq-a-label">A</span>
+            <p class="faq-answer__text">保険診療の場合は症状・保険種別によって異なりますが、自己負担200円〜が目安です。自費診療の場合は施術内容により異なります。詳しくはお電話でご確認ください。</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- アクセス・営業時間 -->
+  <section class="access-section" id="access">
+    <div class="container">
+      <h2 class="section-title">アクセス・営業時間</h2>
+      <div class="access-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d816.8!2d135.6938173!3d34.8623543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60011b403ea7c5e1%3A0x57f7c757bf854acf!2z5Lmd5pyo6Y244pGY5bqX5pW05piD5pW45YyW77yR77yU!5e0!3m2!1sja!2sjp!4v1234567890"
+          allowfullscreen
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="かがやき鍼灸整骨院 地図">
+        </iframe>
+      </div>
+      <div class="access-info">
+        <div class="access-row">
+          <span class="access-row__label">住所</span>
+          <span class="access-row__value">京都府八幡市男山泉14-6</span>
+        </div>
+        <div class="access-row">
+          <span class="access-row__label">月〜金</span>
+          <span class="access-row__value">9:00〜13:00 ／ 16:00〜20:30</span>
+        </div>
+        <div class="access-row">
+          <span class="access-row__label">土曜</span>
+          <span class="access-row__value">9:00〜13:00（予約のみ）</span>
+        </div>
+        <div class="access-row">
+          <span class="access-row__label">日曜</span>
+          <span class="access-row__value">休診</span>
+        </div>
+        <div class="access-row">
+          <span class="access-row__label">駐車場</span>
+          <span class="access-row__value">3台（無料）</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA 最後 -->
   <div class="cta-block">
     <div class="container">
       <h2 class="section-title section-title--cta">まずはお電話ください</h2>
@@ -226,47 +349,12 @@
     </div>
   </div>
 
-  <!-- サブボタン -->
-  <section class="section">
-    <div class="container">
-      <div class="btn-group">
-        <a href="index.html#faq" class="btn-sub">よくある質問</a>
-        <a href="index.html#ryokin" class="btn-sub">料金の目安を見る</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- 営業時間・アクセス -->
-  <section class="hours-mini">
-    <div class="container">
-      <h2 class="hours-mini__title">営業時間・アクセス</h2>
-      <div class="hours-mini__grid">
-        <div class="hours-mini__row">
-          <span class="hours-mini__label">月〜金</span>
-          <span class="hours-mini__value">9:00〜13:00 ／ 16:00〜20:30</span>
-        </div>
-        <div class="hours-mini__row">
-          <span class="hours-mini__label">土曜</span>
-          <span class="hours-mini__value">9:00〜13:00（予約のみ）</span>
-        </div>
-        <div class="hours-mini__row">
-          <span class="hours-mini__label">日曜</span>
-          <span class="hours-mini__value">休診</span>
-        </div>
-        <div class="hours-mini__row">
-          <span class="hours-mini__label">住所</span>
-          <span class="hours-mini__value">京都府八幡市男山泉14-6（駐車場3台）</span>
-        </div>
-      </div>
-      <a href="index.html#access" class="hours-mini__link">地図を見る →</a>
-    </div>
-  </section>
-
   <!-- Footer -->
   <footer class="site-footer">
     <p class="site-footer__logo">かがやき鍼灸整骨院</p>
     <p class="site-footer__copy">© 2019 かがやき鍼灸整骨院. All Rights Reserved.</p>
   </footer>
+
 
   <a href="tel:075-981-0808" class="sticky-cta">
     <span class="sticky-cta__icon">📞</span>

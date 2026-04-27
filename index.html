@@ -19,6 +19,20 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+
+  <!-- Google tag (gtag.js) - GA4 -->
+  <!-- 測定ID: 院長のGoogleアカウントで取得後 G-XXXXXXXXXX を差し替えてください -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+  <!-- Google Search Console 認証 -->
+  <!-- 認証コード取得後に content="" 内を差し替えてください -->
+  <meta name="google-site-verification" content="XXXXXXXXXX" />
 </head>
 <body>
 
@@ -33,9 +47,7 @@
     <div class="site-header__right">
       <span class="site-header__notice">予約なしでもOK！</span>
       <a href="tel:075-981-0808" class="site-header__tel-btn">📞<span class="site-header__tel-num"> 075-981-0808</span></a>
-      <button class="hamburger" id="hamburger" aria-label="メニューを開く">
-        <span></span><span></span><span></span>
-      </button>
+      <button class="hamburger" id="hamburger" aria-label="メニューを開く"><span></span><span></span><span></span></button>
     </div>
   </header>
 
@@ -47,6 +59,7 @@
       <li><a href="sports.html" class="drawer__item">スポーツ外傷・障害</a></li>
       <li><a href="shoulder.html" class="drawer__item">肩こり・腰痛</a></li>
       <li><a href="visit.html" class="drawer__item">無料送迎・訪問診療</a></li>
+      <li><a href="ryokin.html" class="drawer__item">料金一覧</a></li>
     </ul>
   </nav>
   <div class="drawer-overlay" id="drawerOverlay"></div>
@@ -57,8 +70,8 @@
       <img src="img/kagayaki_fv.jpg" alt="かがやき鍼灸整骨院" onerror="this.style.display='none'" />
     </div>
     <div class="fv__overlay">
-      <h1 class="fv__catch">その痛み、<br />一人で抱えていませんか？</h1>
-      <p class="fv__sub">スポーツ外傷・肩こり・腰痛<br />八幡市で20年、地域の痛みに向き合ってきました</p>
+      <h1 class="fv__catch">八幡市の<br />かかりつけ整骨院</h1>
+      <p class="fv__sub">地域に寄り添って約20年</p>
       <div class="fv__tags">
         <span class="fv__tag">スポーツ障害・慢性疼痛</span>
         <span class="fv__tag">子連れOK・送迎あり</span>
@@ -75,12 +88,6 @@
       <h2 class="nayami__title">あなたの悩みはどれですか</h2>
       <ul class="nayami__list">
         <li>
-          <a href="first.html" class="nayami__item">
-            <span class="nayami__item-text">初めての方へ・施術の流れ</span>
-            <span class="nayami__item-arrow">→</span>
-          </a>
-        </li>
-        <li>
           <a href="sports.html" class="nayami__item">
             <span class="nayami__item-text">部活・スポーツの怪我を早く治したい</span>
             <span class="nayami__item-arrow">→</span>
@@ -93,7 +100,7 @@
           </a>
         </li>
         <li>
-          <a href="visit.html" class="nayami__item">
+          <a href="#sogei" class="nayami__item">
             <span class="nayami__item-text">歩くのが辛い・送迎で通いたい</span>
             <span class="nayami__item-arrow">→</span>
           </a>
@@ -301,7 +308,7 @@
   </section>
 
   <!-- アクセス・営業時間 -->
-  <section class="access-section" id="access">
+  <section class="access-section">
     <div class="container">
       <h2 class="section-title">アクセス・営業時間</h2>
       <div class="access-map">
@@ -341,7 +348,7 @@
   <!-- CTA 最後 -->
   <div class="cta-block">
     <div class="container">
-      <h2 class="section-title section-title--cta">まずはお電話ください</h2>
+      <h2 class="section-title" style="margin-bottom:16px">まずはお気軽に<br />ご相談ください</h2>
       <p class="micro-copy">お電話は30秒で完了します</p>
     </div>
   </div>
