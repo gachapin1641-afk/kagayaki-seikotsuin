@@ -638,19 +638,6 @@ ul, ol {
   margin-top: 2px;
 }
 
-.price-detail-link {
-  display: block;
-  text-align: center;
-  color: #0077DD;
-  font-size: 0.95rem;
-  margin: 16px 0 8px;
-  text-decoration: underline;
-}
-
-.price-detail-link:hover {
-  opacity: 0.7;
-}
-
 .price-note {
   margin-top: 14px;
   padding: 12px 14px;
@@ -837,7 +824,7 @@ ul, ol {
 .faq-answer {
   display: flex;
   gap: 10px;
-  padding: 0 0 18px 0;
+  padding: 10px 0 18px 0;
 }
 
 .faq-a-label {
